@@ -4,6 +4,7 @@ on:
     branches:
       - master 
       - main
+      - Ryan
 permissions:
   contents: write
 jobs:
