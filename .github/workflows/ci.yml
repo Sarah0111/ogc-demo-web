@@ -1,24 +1,23 @@
-name: ci  # 工作流名稱
-on:       # 觸發條件
+name: ci 
+on:
   push:
     branches:
-      - master
+      - master 
       - main
-
-permission:  # 設定 GitHub Pages 所需權限
+permissions:
   contents: write
-
 jobs:
   deploy:
-    runs-on: ubuntu-latest  # 指定執行環境
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3  # 檢出代碼
-      - uses: actions/setup-python@v4  # 設定 Python 環境
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - uses: actions/cache@v2 @v2  # 快取 MkDocs 資料
+      - uses: actions/cache@v2
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install mkdocs-material  # 安裝 MkDocs 和主題
-      - run: mkdocs gh-deploy --force    # 部署到 GitHub Pages
+      - run: pip install mkdocs-material
+      - run: pip install pillow cairosvg
+      - run: mkdocs gh-deploy --force
