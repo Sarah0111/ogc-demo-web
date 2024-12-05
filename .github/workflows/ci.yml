@@ -4,10 +4,8 @@ on:       # 觸發條件
     branches:
       - master
       - main
-
-permission:  # 設定 GitHub Pages 所需權限
+permissions:  # 設定 GitHub Pages 所需權限
   contents: write
-
 jobs:
   deploy:
     runs-on: ubuntu-latest  # 指定執行環境
