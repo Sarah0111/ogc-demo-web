@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-python@v4  # 設定 Python 環境
         with:
           python-version: 3.x
-      - uses: actions/cache@v2 @v2  # 快取 MkDocs 資料
+      - uses: actions/cache@v2  # 快取 MkDocs 資料
         with:
           key: ${{ github.ref }}
           path: .cache
