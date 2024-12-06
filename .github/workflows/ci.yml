@@ -1,8 +1,8 @@
-name: ci
+name: ci 
 on:
   push:
     branches:
-      - master
+      - master 
       - main
 permissions:
   contents: write
@@ -16,9 +16,8 @@ jobs:
           python-version: 3.x
       - uses: actions/cache@v2
         with:
-          key: ${{ github.ref }}-${{ github.run_number }}
+          key: ${{ github.ref }}
           path: .cache
-      - run: rm -rf .cache site/
-      - run: pip install mkdocs-material==9.5.47 pillow cairosvg
+      - run: pip install mkdocs-material
+      - run: pip install pillow cairosvg
       - run: mkdocs gh-deploy --force
-      - run: sleep 10
