@@ -1,4 +1,24 @@
-site_name: My Docs
+site_name: OGC CDRP24.2 - D120 Generative AI-Enabled Virtual Assistant Workflows
 site_url: https://Ryan19981229.github.io/ogc-demo-web/
 theme:
   name: material
+  font:
+    text: 'Merriweather Sans'
+    code: 'Red Hat Mono'
+nav:
+  - Introduction:
+    - Project Description and Goals: Section1-Project Description and Goals.md
+  - Data Processing:
+    - Data Source: Section2-Data Source.md
+    - Data Processing Method: Section2-Data Processing Method.md
+  - Using Technology:
+    - Technology Description: Section3-Technology Description.md
+    - Glossary of Terms: Section3-Glossary of Terms.md
+    - Process Description, Flowchart: Section3-Process Description, Flowchart.md
+    - API Integration Description: Section3-API Integration Description.md
+  - Additional information:
+    - User Manual: Section4-User Manual.md
+    - Scenario Demonstration: Section4-Scenario Demonstration.md
+    - FAQ: Section4-FAQ.md
+  - Demo:
+    - Demo: Section5-Demo.md
