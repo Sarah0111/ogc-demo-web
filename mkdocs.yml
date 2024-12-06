@@ -6,6 +6,7 @@ theme:
     text: 'Merriweather Sans'
     code: 'Red Hat Mono'
 nav:
+  - Home: index.md
   - Introduction:
     - Project Description and Goals: Section1-Project Description and Goals.md
   - Data Processing:
