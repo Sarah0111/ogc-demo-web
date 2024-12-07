@@ -2,8 +2,12 @@
 
 <img src="../assets/flowchart.png" alt="RAG Process" width="" />
 
-- Split: RAG begins with turning your structured or unstructured documents into text documents, and breaking down text into small pieces (chunks).
-- Embed documents: A text embedding model steps in, turning each chunk into vectors representing their semantic meaning.
-- VectorDB: These embeddings are then stored in a vector database, serving as the foundation for data retrieval.
-- Retrieval: Upon receiving a user query, the vector database helps retrieve chunks relevant to the user's request.
-- Response Generation: With context, an LLM synthesizes these pieces to generate a coherent and informative response.
+- Split: RAG starts by converting structured or unstructured documents into plain text and then breaking the text into smaller segments, or chunks, for easier processing.
+
+- Embed Documents: A text embedding model processes each chunk, transforming it into a vector that captures its semantic meaning.
+
+- VectorDB: These vectors are stored in a vector database, which serves as the foundation for efficient data retrieval.
+
+- Retrieval: When a user submits a query, the vector database quickly identifies and retrieves the chunks most relevant to the query.
+
+- Response Generation: Finally, a large language model (LLM) synthesizes the retrieved chunks to produce a coherent and informative response.
